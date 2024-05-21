@@ -5,7 +5,9 @@ import withTheme from "./withTheme";
 import withLoggingOnClick from "./withLoggingOnClick";
 
 const ButtonWithTheme = withTheme(Button);
-const ButtonWithLoggingOnClick = withLoggingOnClick(Button);
+const ButtonWithLoggingOnClick = withLoggingOnClick(Button, {
+  label: "Button",
+});
 
 function HOC() {
   return (
@@ -14,8 +16,9 @@ function HOC() {
         Send
       </Button>
       <ButtonWithLoggingOnClick
-        onClick={() => console.log("Sent with analytics")}
         icon={<SendIcon />}
+        onClick={() => console.log("Sent with analytics")}
+        location={"HOC.jsx"}
       >
         Send (Analytical)
       </ButtonWithLoggingOnClick>

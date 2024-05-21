@@ -7,7 +7,7 @@ export default function withLoggingOnClick(
 
     const onClick = () => {
       props.onClick();
-      console.log(`analytical logs sent: ${options.label}`);
+      console.log(`analytical logs sent: ${options.label} - ${location}`);
     };
 
     return <Component {...props} onClick={onClick}></Component>;
