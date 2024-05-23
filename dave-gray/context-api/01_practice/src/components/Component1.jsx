@@ -16,7 +16,7 @@ function Component1() {
   }, [username]);
 
   return (
-    <div>
+    <div className="m-4">
       <h2 className="text-4xl font-medium">{test}</h2>
 
       <button

@@ -5,14 +5,10 @@ import Component2 from "./components/Component2";
 
 function App() {
   return (
-    <React.Fragment>
-      <DataProvider>
-        <div className="m-4">
-          <Component1 />
-          <Component2 />
-        </div>
-      </DataProvider>
-    </React.Fragment>
+    <DataProvider>
+      <Component1 />
+      <Component2 />
+    </DataProvider>
   );
 }
 
