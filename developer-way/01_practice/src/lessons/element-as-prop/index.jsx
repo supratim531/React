@@ -37,6 +37,7 @@ function ElementAsProp() {
         onClick={() => {
           console.log("It won't work");
         }}
+        appearance="primary"
         disabled
         className="rounded-3xl"
       >

@@ -8,7 +8,7 @@ function RenderProps() {
     <div className="p-4 space-x-4">
       <Button
         icon={(props, isHovered) => (
-          <LibrarySendIcon {...props} fontColor={isHovered ? "yellow" : ""} />
+          <LibrarySendIcon fontColor={isHovered ? "yellow" : ""} {...props} />
         )}
       >
         Send
@@ -16,7 +16,7 @@ function RenderProps() {
       <Button
         appearance="secondary"
         icon={(props, isHovered) => (
-          <LibraryWarningIcon {...props} fontColor={isHovered ? "red" : ""} />
+          <LibraryWarningIcon fontColor={isHovered ? "red" : ""} {...props} />
         )}
       >
         Danger

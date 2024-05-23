@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     //For combine keys like Ctrl + S
     document.onkeydown = function (event) {
-      if (event.keyCode == 83 && event.ctrlKey) {
+      if (event.keyCode === 83 && event.ctrlKey) {
         event.preventDefault();
         alert("Saving is not supported");
       }
@@ -16,8 +16,8 @@ function App() {
 
   return (
     <div>
-      {/* <ElementAsProp /> */}
-      {/* <RenderProps /> */}
+      <ElementAsProp />
+      <RenderProps />
       <HOC />
     </div>
   );

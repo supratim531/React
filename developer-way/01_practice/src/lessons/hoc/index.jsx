@@ -15,10 +15,13 @@ function HOC() {
       <Button onClick={() => console.log("Sent")} icon={<SendIcon />}>
         Send
       </Button>
+      <ButtonWithTheme onClick={() => console.log("Button with theme")}>
+        Theme Button
+      </ButtonWithTheme>
       <ButtonWithLoggingOnClick
+        location={HOC.name}
         icon={<SendIcon />}
-        onClick={() => console.log("Sent with analytics")}
-        location={"HOC.jsx"}
+        onClick={() => console.log("Sent (Analytical)")}
       >
         Send (Analytical)
       </ButtonWithLoggingOnClick>
